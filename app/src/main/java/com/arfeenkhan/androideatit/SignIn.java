@@ -2,8 +2,8 @@ package com.arfeenkhan.androideatit;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,11 +17,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import info.hoang8f.widget.FButton;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class SignIn extends AppCompatActivity {
-    EditText edtPhone,edtPassword;
+    MaterialEditText edtPhone,edtPassword;
     Button btnSignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

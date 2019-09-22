@@ -1,17 +1,15 @@
 package com.arfeenkhan.androideatit;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import info.hoang8f.widget.FButton;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignIn, btnSignUp;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnSignIn = findViewById(R.id.btnSignIn);
         btnSignUp = findViewById(R.id.btnSignUp);
+
+
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,5 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, SignUp.class));
             }
         });
+
+
+
+
     }
 }

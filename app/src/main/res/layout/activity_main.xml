@@ -23,6 +23,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:fontFamily="@font/nabila"
             android:text="@string/slogan"
             android:textColor="@android:color/white" />
     </LinearLayout>
@@ -35,13 +36,14 @@
         android:orientation="horizontal"
         android:weightSum="2">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:id="@+id/btnSignUp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="Sign Up"
+            app:buttonColor="@color/btnSignUp"
             android:textColor="@android:color/white" />
 
         <info.hoang8f.widget.FButton
@@ -51,6 +53,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="Sign In"
+            app:buttonColor="@color/btnSignActive"
             android:textColor="@android:color/white" />
 
     </LinearLayout>
